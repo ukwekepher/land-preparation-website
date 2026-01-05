@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - KING’S CASTLE GLOBAL SERVICES</title>
+    <link rel="stylesheet" href="style/general.css" />
+    <link rel="stylesheet" href="style/header.css" />
+    <link rel="stylesheet" href="style/footer.css" />
+    <style>
+      /* ===== BODY MAIN BACKGROUND ===== */
+      .main-content {
+        background-image: url("/icons/house.jpg"); /* your full-page background image */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: calc(
+          300vh - 1000px
+        ); /* full viewport height minus header & footer */
+        padding: 60px 20px 40px 20px;
+        color: #fff; /* text color */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        position: relative;
+      }
+
+      /* optional overlay for readability */
+      .main-content::before {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.45); /* dark overlay for contrast */
+        z-index: 0;
+      }
+
+      /* text content above overlay */
+      .main-content > * {
+        position: relative;
+        top: 180px;
+        z-index: 1;
+        max-width: 900px;
+      }
+
+      .main-content h2 {
+        font-size: 36px;
+        margin-bottom: 20px;
+        color: #f0c27b;
+      }
+
+      .main-content p {
+        font-size: 18px;
+        line-height: 1.8;
+        margin-bottom: 15px;
+      }
+
+      .call-to-action {
+        margin-top: 30px;
+      }
+
+      .call-to-action a {
+        display: inline-block;
+        padding: 15px 35px;
+        background-color: #f0c27b;
+        color: #000;
+        font-weight: bold;
+        border-radius: 8px;
+        text-decoration: none;
+        font-size: 18px;
+        transition: 0.3s ease;
+      }
+
+      .call-to-action a:hover {
+        background-color: #d4a94e;
+      }
+
+      .home-link {
+        position: absolute;
+        bottom: 10px; /* controls vertical position */
+        left: 50%;
+        transform: translateX(-50%);
+
+        display: inline-block;
+        width: 80px;
+        text-align: center;
+
+        background-color: #f0c27b;
+        color: #000;
+
+        border-radius: 6px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: large;
+        padding-bottom: -20px;
+        padding-top: -25px;
+        margin-top: 160px;
+        top: 10px;
+        z-index: 200;
+      }
+
+      .home-link:hover {
+        background-color: #d4a94e;
+        transform: translateX(-50%) translateY(-2px);
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- ===== HEADER ===== -->
+    <div class="header">
+      <div class="left-section">
+        <img class="house-icon" src="/icons/sep.jpg" />
+      </div>
+
+      <div class="middle-section">
+        <h1 class="king">🏰 KING’S CASTLE GLOBAL SERVICES</h1>
+        <h2 class="kingB">Site Preparation & Land Clearing Services</h2>
+      </div>
+
+      <a href="king.html" class="home-link">Home</a>
+
+      <div class="right-section">
+        <img class="house-icon-B" src="/icons/copy.jpg" />
+      </div>
+    </div>
+    <div class="header-spacer"></div>
+
+    <!-- ===== MAIN CONTENT ON BACKGROUND ===== -->
+    <div class="main-content">
+      <h2>About Us</h2>
+      <p>
+        At KING’S CASTLE GLOBAL SERVICES, we specialize in professional site
+        preparation and land clearing services for construction projects across
+        Nigeria. Our team ensures your land is ready for building, with safety,
+        precision, and efficiency at the core.
+      </p>
+      <p>
+        Our mission is to provide dependable, high-quality land clearing
+        solutions, helping estate managers, developers, and homeowners start
+        their projects on a solid foundation. We combine modern equipment with
+        hands-on expertise to deliver exceptional results.
+      </p>
+      <p>
+        With years of experience, KING’S CASTLE GLOBAL SERVICES has become a
+        trusted partner in the construction industry. We pride ourselves on
+        punctuality, reliability, and exceeding client expectations.
+      </p>
+
+      <div class="call-to-action">
+        <a href="services.html">Explore Our Services</a>
+      </div>
+    </div>
+
+    <!-- ===== FOOTER ===== -->
+    <div class="footer">
+      <h4 class="footer-title">Working Hours</h4>
+      <div class="working-hours">
+        <p>Monday: 8am - 4pm</p>
+        <p>Tuesday: 8am - 4pm</p>
+        <p>Wednesday: 8am - 4pm</p>
+        <p>Thursday: 8am - 4pm</p>
+        <p>Friday: 8am - 4pm</p>
+        <p>Saturday: Closed</p>
+        <p>Sunday: Closed</p>
+      </div>
+
+      <div class="social-media-row">
+        <button class="social-media-button">
+          <img
+            src="/icons/facebook icon.png"
+            alt="Facebook Icon"
+            class="social-icon"
+          />
+          <span>Facebook</span>
+        </button>
+        <button class="social-media-button">
+          <img
+            src="/icons/lindin.png"
+            alt="LinkedIn Icon"
+            class="social-icon"
+          />
+          <span>LinkedIn</span>
+        </button>
+        <button class="social-media-button">
+          <img
+            src="/icons/instergram.png"
+            alt="Instagram Icon"
+            class="social-icon"
+          />
+          <span>Instagram</span>
+        </button>
+        <button class="social-media-button">
+          <img src="/icons/gmail.png" alt="Gmail Icon" class="social-icon" />
+          <span>Gmail</span>
+        </button>
+      </div>
+
+      <p class="footer-text">
+        © 2025 KING’S CASTLE GLOBAL SERVICES. All rights reserved.
+      </p>
+    </div>
+  </body>
+</html>

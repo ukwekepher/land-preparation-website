@@ -1,0 +1,105 @@
+/* ===== FOOTER BASE ===== */
+.footer {
+  width: 100%;
+  background-color: #001f3f; /* dark navy */
+  color: white;
+  padding: 40px 20px;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+
+  text-align: center;
+  position: relative;
+  z-index: 5;
+}
+
+/* ===== FOOTER TITLE ===== */
+.footer-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+/* ===== WORKING HOURS ===== */
+.working-hours {
+  font-size: 14px;
+}
+
+.working-hours p {
+  margin: 3px 0;
+}
+
+/* ===== SOCIAL MEDIA ROW ===== */
+.social-media-row {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ===== SOCIAL BUTTONS ===== */
+.social-media-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 8px 16px;
+  border-radius: 12px;
+  border: none;
+
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.08),
+    rgba(255, 255, 255, 0.15)
+  );
+
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.15);
+}
+
+.social-media-button:hover {
+  box-shadow: 0 0 16px rgba(255, 255, 255, 0.6);
+  transform: translateY(-2px);
+}
+
+/* ===== ICON ===== */
+.social-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* ===== FOOTER TEXT ===== */
+.footer-text {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
+  opacity: 0.85;
+}
+
+/* ===== LINK RESET (IMPORTANT) ===== */
+.footer a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 500px) {
+  .footer {
+    padding: 30px 15px;
+  }
+
+  .social-media-row {
+    gap: 10px;
+  }
+}
